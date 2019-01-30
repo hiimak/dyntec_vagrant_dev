@@ -13,7 +13,10 @@ sudo apt install -y php7.0 php7.0-bcmath php7.0-mbstring php7.0-json php7.0-curl
 sudo phpenmod bcmath ctype curl dom gd hash iconv json mbstring openssl pdo_mysql session PDO xml SimpleXML zip zlib
 
 sudo sed -i 's/memory_limit = 128M/memory_limit = 512M/g'  /etc/php/7.0/apache2/php.ini
-sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 9M/g'  /etc/php/7.0/apache2/php.ini
+sudo sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 150M/g'  /etc/php/7.0/apache2/php.ini
+sudo sed -i 's/max_execution_time = 30/max_execution_time = 3000/g'  /etc/php/7.0/apache2/php.ini
+sudo sed -i 's/max_input_time = 60/max_input_time = 3000/g'  /etc/php/7.0/apache2/php.ini
+sudo sed -i 's/post_max_size = 8M/post_max_size = 150M/g'  /etc/php/7.0/apache2/php.ini
 
 wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.zip
 unzip ioncube_loaders_lin_x86-64.zip -d /home/vagrant/
