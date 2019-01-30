@@ -1,0 +1,1 @@
+{"virtualbox":{"dyntec":{"id":"dyntec","owner":"www-data","group":"www-data","mount_options":["dmode=766","fmode=766","uid=33","gid=33"],"guestpath":"/var/www/dyntec/public_html","hostpath":"D:/dyntec/dyntec/var/www/dyntec/public_html","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/Vagrant/Dyntec","disabled":false,"__vagrantfile":true}}}
